@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%- assign path = page.redirectPath -%}
+{%- if page.redirectBaseUrl -%}
+  {%- assign baseUrl = page.redirectBaseUrl -%}
+{%- else -%}
+  {%- assign baseUrl = site.url -%}
+{%- endif -%}
+<html>
+  </head>
+    {%- if path and path != page.url -%}
+      <!-- Treated as permanent redirect (301) by Google bot, implying strongly a new canonical URL: -->
+      <meta http-equiv="refresh" content="0; url='{{ baseUrl }}/{{ path }}'" />
+    {%- endif -%}
+  </head>
+  <body>
+    {%- if path -%}
+      {%- if path != page.url -%}
+      <p>Siirry <a href="{{ baseUrl }}/{{ path }}">kohdesivulle</a></p>
+      {%- else -%}
+      <p>Viallinen uudelleenohjaus, osoite on jo <code>{{ baseUrl }}/{{ path }}</code></p>
+      {%- endif -%}
+    {%- else -%}
+      <p>Viallinen uudelleenohjaus, <code>page.redirectPath</code> puuttuu</p>
+    {%- endif -%}
+  </body>
+ 
+</html>
