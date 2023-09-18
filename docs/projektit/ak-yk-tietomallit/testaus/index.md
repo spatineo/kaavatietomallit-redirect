@@ -1,5 +1,5 @@
 ---
 layout: "redirect"
-redirectBaseUrl: "https://tietomallit.ymparisto.fi"
+redirectBaseUrl: "https://spatineo.github.io/ry-tietomallit"
 redirectPath: "kehitys/ak-yk-tietomallit/testaus/"
 ---

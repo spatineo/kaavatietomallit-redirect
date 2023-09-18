@@ -1,5 +1,5 @@
 ---
 layout: "redirect"
-redirectBaseUrl: "https://tietomallit.ymparisto.fi"
+redirectBaseUrl: "https://spatineo.github.io/ry-tietomallit"
 redirectPath: "kaavatiedot/v1.0/looginenmalli/elinkaarisaannot.html"
 ---

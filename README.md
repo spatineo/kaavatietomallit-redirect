@@ -1,2 +1,2 @@
 # kaavatietomallit-redirect
-Uudelleenohjaukset kaavatietomalli.fi -> tietomallit.ymparisto.fi
+Uudelleenohjaukset https://kaavatietomalli.fi -> https://spatineo.github.io/ry-tietomallit
